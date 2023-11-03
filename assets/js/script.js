@@ -1,4 +1,5 @@
 /*
+KOTRANA JS
 var btn = document.getElementById("button");
 btn.onclick = function () {
     var division = parseFloat(diviseur.value);

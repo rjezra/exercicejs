@@ -1,36 +1,115 @@
-body{
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../font/Montserrat-Bold.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat-Bold';
+}
+
+body {
     background: linear-gradient(0.50turn, #3f87a6, #ebf8e1, #f69d3c) no-repeat;
     height: 100vh;
     color: rgb(255, 255, 255);
 }
-h1{
+
+h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
-    /* Les tailles de polices doives être en REM */
     font-size: 2.5rem;
     text-shadow: 3px 3px 8px #00000042;
-    color: rgb(128, 88, 188);
-    font-family:'Oswald';    
+    color: rgb(191, 186, 200);
+    font-family: 'Oswald';
 }
-.main{
+.main {
+    display: block;
     min-height: 500px;
+    max-height: 100vh;
     width: 50%;
-    background: rgba(160, 159, 156, 0.522);
-    margin:0 auto ;
+    background: rgba(90, 146, 121, 0.255);
+    margin: 0 auto;
     border: 3px solid blue;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 20px 4px #81cfc5;
     padding: 15px;
+    margin-top: 20px;
+    
 }
-input,
+
 button,
-.resulat{
+input {
     width: 90%;
     margin: 5px;
     border: 1px solid blue;
     padding: 10px;
     font-size: 1.1rem;
-    font-family:'Oswald-Medium';
     border-radius: 5px;
+}
+
+.input1 {
+    animation-name: exeple1;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exeple1 {
+    0% {
+        background-color: rgba(165, 42, 42, 0.442);
+
+    }
+
+    50% {
+        background-color: rgba(75, 213, 16, 0.388);
+    }
+}
+
+.input2 {
+    animation-name: exeple2;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exeple2 {
+    0% {
+        background-color: rgba(75, 213, 16, 0.388);
+
+    }
+
+    50% {
+
+        background-color: rgba(165, 42, 42, 0.442);
+    }
+}
+
+.input3 {
+    animation-name: exeple3;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exeple3 {
+    0% {
+        background-color: rgba(165, 42, 42, 0.442);
+
+    }
+
+    50% {
+        background-color: rgba(75, 213, 16, 0.388);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    button,
+    input {
+        padding: 5px;
+    }
+
 }
