@@ -1,11 +1,12 @@
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url(../font/Montserrat-Bold.ttf);
+    src: url('../font/Montserrat-Bold.ttf') format('truetype');
 }
+
 * {
+    font-family: 'Montserrat-Bold', Arial, sans-serif;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat-Bold';
 }
 
 body {
@@ -23,6 +24,7 @@ h1 {
     color: rgb(191, 186, 200);
     font-family: 'Oswald';
 }
+
 .main {
     display: block;
     min-height: 500px;
@@ -35,15 +37,15 @@ h1 {
     box-shadow: 0 0 20px 4px #81cfc5;
     padding: 15px;
     margin-top: 20px;
-    
+
 }
 
 button,
 input {
     width: 90%;
-    margin: 5px;
+    margin: 5px 0 0 5%;
     border: 1px solid blue;
-    padding: 10px;
+    padding: 10px 0;
     font-size: 1.1rem;
     border-radius: 5px;
 }
@@ -107,9 +109,10 @@ input {
     h1 {
         font-size: 1.5rem;
     }
+
     button,
     input {
-        padding: 5px;
+        padding: 5px 0;
     }
 
 }
