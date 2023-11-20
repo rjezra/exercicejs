@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Segoe-UI.ttf';
+    src: url(./Segoe\ UI.ttf);
+}
+
+
+body {
+    font-family: 'Segoe-UI.ttf';
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(0.50turn, #3f87a6, #ebf8e1, #f69d3c) no-repeat;
+    ;
+}
+
+.container {
+    width: 45%;
+    height: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #506f8a,
+        -12px -12px 20px #fcfcfc89;
+}
+
+.display #screen {
+    width: 97%;
+    height: 70px;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #d9dee3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset 8px 8px 8px #cbced1;
+}
+
+.btns {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: centre;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns .row button {
+    font-family: 'Segoe-UI.ttf';
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px #050c12,
+        -2px -2px 6px #fefeff;
+}

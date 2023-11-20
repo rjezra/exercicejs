@@ -4,37 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exo js</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/stylemobile.css">
 </head>
 
 <body>
-    <div class="main">
-        <h1>Exercice JS</h1>
-        <div class="forme">
-            <div class="input1">
-                <label for="numbre1">Nombre de diviseur</label>
-                <input type="number" name="diviseur" id="diviseur">
-            </div>
-            <div class="input2">
-                <label for="numbre1">Nombre debut</label>
-                <input type="number" name="numbre1" id="numbre1">
-            </div>
-            <div class="input3">
-                <label for="numbre1">Nombre fin</label>
-                <input type="number" name="numbre2" id="numbre2">
-            </div>
-
-            <div class="input">
-                <button type="button" id="button" class="button">Valider</button>
-            </div>
+    <div class="container">
+        <div class="display">
+            <input type="text" id="screen" placeholder="0">
         </div>
+        <div class="btns">
+            <div class="row">
+                <button onclick="back()">CE</button>
+                <button onclick="fact()">x!</button>
+                <button class="button">(</button>
+                <button class="button">)</button>
+                <button class="button">%</button>
+                <button onclick="screen.value=''">AC</button>
+            </div>
+            <div class="row">
+                <button onclick="sin()">sin</button>
+                <button onclick="pi()">π</button>
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button">/</button>
 
-
-        <div class="resultat" id="resulat">
+            </div>
+            <div class="row">
+                <button onclick="cos()">cos</button>
+                <button onclick="log()">log</button>
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button">*</button>
+            </div>
+            <div class="row">
+                <button onclick="tan()">tan</button>
+                <button onclick="sqrt()">√</button>
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button">-</button>
+            </div>
+            <div class="row">
+                <button onclick="e()">e</button>
+                <button onclick="pow()">x^y</button>
+                <button class=" button">0</button>
+                <button class="button">.</button>
+                <button onclick="egal()">=</button>
+                <button class="button">+</button>
+            </div>
         </div>
     </div>
-    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="./assets/scrypte.js" type="text/javascript"></script>
 </body>
 
 </html>
